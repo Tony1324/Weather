@@ -21,5 +21,5 @@ window.addEventListener('load',() => {
 				document.getElementById('description').innerHTML = description;
 			})
 		})	
-	}		
+	}else{console.log("hello")}		
 });
