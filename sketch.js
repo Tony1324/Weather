@@ -6,8 +6,8 @@ window.addEventListener('load',() => {
 	let lat;
 
 
-	if(navigator.geolocation){
-		navigator.geolocation.getCurrentPosition(position =>{
+	
+		
 
 		long = position.coords.longitude;
 		lat = position.coords.latitude;
@@ -20,6 +20,6 @@ window.addEventListener('load',() => {
 				document.getElementById('temp').innerHTML = Math.round((temp-273.1)*10)/10+"°C";
 				document.getElementById('description').innerHTML = description;
 			})
-		})	
-	}else{console.log("hello")}		
+		
+			
 });
