@@ -3,7 +3,7 @@ window.addEventListener('load',() => {
 	var temp = 0;
 	var description = 0;
 
-	fetch(`http://api.openweathermap.org/data/2.5/weather?q=boston&appid=2669340c1ffaa498ad124cd7d7bb6eba`)
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=boston&appid=2669340c1ffaa498ad124cd7d7bb6eba`)
 		.then(res => res.json())
 		.then(data => {
 			temp = data.main.temp;
